@@ -13,6 +13,7 @@
 		77008F401BE1FA8100C2A3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77008F3E1BE1FA8100C2A3E7 /* LaunchScreen.storyboard */; };
 		77008F4B1BE1FA8200C2A3E7 /* STKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77008F4A1BE1FA8200C2A3E7 /* STKitDemoTests.m */; };
 		77008F561BE1FA8200C2A3E7 /* STKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77008F551BE1FA8200C2A3E7 /* STKitDemoUITests.m */; };
+		77A7422E1BF80FEE0026FB9D /* STAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7422D1BF80FEE0026FB9D /* STAppController.m */; };
 		77E0708F1BF6DE12005BC40E /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0708E1BF6DE12005BC40E /* MainController.m */; };
 		77E0712D1BF6E0B2005BC40E /* NSArray+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E070F11BF6E0B2005BC40E /* NSArray+STKit.m */; };
 		77E0712E1BF6E0B2005BC40E /* NSDate+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E070F31BF6E0B2005BC40E /* NSDate+STKit.m */; };
@@ -76,6 +77,8 @@
 		77008F511BE1FA8200C2A3E7 /* STKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77008F551BE1FA8200C2A3E7 /* STKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKitDemoUITests.m; sourceTree = "<group>"; };
 		77008F571BE1FA8200C2A3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A7422C1BF80FEE0026FB9D /* STAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAppController.h; sourceTree = "<group>"; };
+		77A7422D1BF80FEE0026FB9D /* STAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAppController.m; sourceTree = "<group>"; };
 		77E0708D1BF6DE12005BC40E /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		77E0708E1BF6DE12005BC40E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		77E070F01BF6E0B2005BC40E /* NSArray+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+STKit.h"; sourceTree = "<group>"; };
@@ -167,8 +170,8 @@
 		77008F241BE1FA8100C2A3E7 = {
 			isa = PBXGroup;
 			children = (
-				77E070ED1BF6E0B2005BC40E /* STKit */,
 				77008F2F1BE1FA8100C2A3E7 /* STKitDemo */,
+				77E070ED1BF6E0B2005BC40E /* STKit */,
 				77008F491BE1FA8200C2A3E7 /* STKitDemoTests */,
 				77008F541BE1FA8200C2A3E7 /* STKitDemoUITests */,
 				77008F2E1BE1FA8100C2A3E7 /* Products */,
@@ -188,6 +191,7 @@
 		77008F2F1BE1FA8100C2A3E7 /* STKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				77A7422B1BF80FB70026FB9D /* STKit */,
 				77008F331BE1FA8100C2A3E7 /* AppDelegate.h */,
 				77008F341BE1FA8100C2A3E7 /* AppDelegate.m */,
 				77E0708D1BF6DE12005BC40E /* MainController.h */,
@@ -224,6 +228,15 @@
 				77008F571BE1FA8200C2A3E7 /* Info.plist */,
 			);
 			path = STKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		77A7422B1BF80FB70026FB9D /* STKit */ = {
+			isa = PBXGroup;
+			children = (
+				77A7422C1BF80FEE0026FB9D /* STAppController.h */,
+				77A7422D1BF80FEE0026FB9D /* STAppController.m */,
+			);
+			path = STKit;
 			sourceTree = "<group>";
 		};
 		77E070ED1BF6E0B2005BC40E /* STKit */ = {
@@ -488,6 +501,7 @@
 				77E0712E1BF6E0B2005BC40E /* NSDate+STKit.m in Sources */,
 				77E071491BF6E0B2005BC40E /* STTouchID.m in Sources */,
 				77E071321BF6E0B2005BC40E /* NSMutableDictionary+STKit.m in Sources */,
+				77A7422E1BF80FEE0026FB9D /* STAppController.m in Sources */,
 				77E071481BF6E0B2005BC40E /* STSystemSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,7 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ST.STKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,7 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ST.STKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

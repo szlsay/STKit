@@ -2,7 +2,7 @@
 //  UIView+STKit.h
 //  STKitDemo
 //
-//  Created by rkxt_ios on 15/10/30.
+//  Created by ST on 15/11/14.
 //  Copyright © 2015年 shentian. All rights reserved.
 //
 

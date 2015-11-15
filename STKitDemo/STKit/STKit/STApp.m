@@ -8,24 +8,21 @@
 
 #import "STApp.h"
 
-NSString *const STBundleDisplayName        = @"CFBundleDisplayName";
+NSString *const STBundleName               = @"CFBundleName";
 NSString *const STBundleVersion            = @"CFBundleVersion";
 NSString *const STBundleShortVersionString = @"CFBundleShortVersionString";
 
 
-
-static NSString *STHasBeenOpened = @"STHasBeenOpened";
-static NSString *STHasBeenOpenedForCurrentVersion = @"";
+static NSString  *STHasBeenOpened                  = @"STHasBeenOpened";
+static NSString  *STHasBeenOpenedForCurrentVersion = @"";
 
 
 @implementation STApp
 
-+ (void)onFirstStart:(void (^)(BOOL isFirstStart))block
-{
++ (void)onFirstStart:(void (^ _Nullable)(BOOL isFirstStart))block {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     BOOL hasBeenOpened = [defaults boolForKey:STHasBeenOpened];
-    if(!hasBeenOpened)
-    {
+    if (hasBeenOpened != true) {
         [defaults setBool:YES forKey:STHasBeenOpened];
         [defaults synchronize];
     }
@@ -33,13 +30,11 @@ static NSString *STHasBeenOpenedForCurrentVersion = @"";
     block(!hasBeenOpened);
 }
 
-+ (void)onFirstStartForCurrentVersion:(void (^)(BOOL isFirstStartForCurrentVersion))block
-{
-    STHasBeenOpenedForCurrentVersion = [NSString stringWithFormat:@"STHasBeenOpened%@", APP_VERSION];
++ (void)onFirstStartForCurrentVersion:(void (^ _Nullable)(BOOL isFirstStartForCurrentVersion))block {
+    STHasBeenOpenedForCurrentVersion = [NSString stringWithFormat:@"%@%@", STHasBeenOpened, APP_Version];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     BOOL hasBeenOpenedForCurrentVersion = [defaults boolForKey:STHasBeenOpenedForCurrentVersion];
-    if(!hasBeenOpenedForCurrentVersion)
-    {
+    if (hasBeenOpenedForCurrentVersion != true) {
         [defaults setBool:YES forKey:STHasBeenOpenedForCurrentVersion];
         [defaults synchronize];
     }
@@ -47,4 +42,49 @@ static NSString *STHasBeenOpenedForCurrentVersion = @"";
     block(!hasBeenOpenedForCurrentVersion);
 }
 
++ (void)onFirstStartForVersion:(NSString * _Nonnull)version block:(void (^ _Nullable)(BOOL isFirstStartForCurrentVersion))block {
+    NSString *STHasBeenOpenedForVersion = [NSString stringWithFormat:@"%@%@", STHasBeenOpened, version];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL hasBeenOpenedForVersion = [defaults boolForKey:STHasBeenOpenedForCurrentVersion];
+    if (hasBeenOpenedForVersion != true) {
+        [defaults setBool:YES forKey:STHasBeenOpenedForVersion];
+        [defaults synchronize];
+    }
+    
+    block(!hasBeenOpenedForVersion);
+}
+
++ (BOOL)isFirstStart {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL hasBeenOpened = [defaults boolForKey:STHasBeenOpened];
+    if (hasBeenOpened != true) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
++ (BOOL)isFirstStartForCurrentVersion {
+    STHasBeenOpenedForCurrentVersion = [NSString stringWithFormat:@"%@%@", STHasBeenOpened, APP_Version];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL hasBeenOpenedForCurrentVersion = [defaults boolForKey:STHasBeenOpenedForCurrentVersion];
+    if (hasBeenOpenedForCurrentVersion != true) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
++ (BOOL)isFirstStartForVersion:(NSString * _Nonnull)version {
+    NSString *STHasBeenOpenedForVersion = [NSString stringWithFormat:@"%@%@", STHasBeenOpened, version];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL hasBeenOpenedForVersion = [defaults boolForKey:STHasBeenOpenedForVersion];
+    if (hasBeenOpenedForVersion != true) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 @end
+
