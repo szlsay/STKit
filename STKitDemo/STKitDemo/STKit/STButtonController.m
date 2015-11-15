@@ -8,6 +8,8 @@
 
 #import "STButtonController.h"
 #import "STButton.h"
+#import "STLog.h"
+#import "STPassword.h"
 @interface STButtonController ()
 @property (nonatomic, strong, nonnull)STButton *button; //<##>
 @end
@@ -22,6 +24,14 @@
     
     // 1.创建视图
     [self setupUI];
+    
+    
+    // 2.打印信息
+    STLog([STLog logString]);
+    
+    NSLog(@"%s, %@", __FUNCTION__, self);
+    
+    STLog([NSString stringWithFormat:@"%ld", (long)[STPassword passwordCheckStrength:@"f36r"]]);
 }
 
 #pragma mark - Delegate 视图委托
@@ -33,6 +43,7 @@
 - (void)setupUI
 {
     [self.view addSubview:self.button];
+
 }
 
 #pragma mark - getters and setters 属性

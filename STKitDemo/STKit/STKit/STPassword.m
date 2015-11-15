@@ -3,14 +3,14 @@
 //  IOS自定义常用控件
 //
 //  Created by shenzhaoliang on 15/2/28.
-//  Copyright (c) 2015年 shundesoft. All rights reserved.
+//  Copyright (c) 2015年 shentian. All rights reserved.
 //
 
 #import "STPassword.h"
 
 @implementation STPassword
 
-+ (PasswordStrengthLevel)checkPasswordStrength:(NSString *)password
++ (PasswordStrengthLevel)passwordCheckStrength:(NSString *)password
 {
     NSInteger length = [password length];
     int lowercase = [self countLowercaseLetters:password];

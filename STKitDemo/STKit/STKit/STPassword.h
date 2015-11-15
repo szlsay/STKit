@@ -3,7 +3,7 @@
 //  IOS自定义常用控件
 //
 //  Created by shenzhaoliang on 15/2/28.
-//  Copyright (c) 2015年 shundesoft. All rights reserved.
+//  Copyright (c) 2015年 shentian. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -30,5 +30,5 @@ typedef NS_ENUM(NSInteger, PasswordStrengthLevel)
 /**
  *  检查密码强度级别
  */
-+ (PasswordStrengthLevel)checkPasswordStrength:(NSString *)password;
++ (PasswordStrengthLevel)passwordCheckStrength:(NSString *)password;
 @end

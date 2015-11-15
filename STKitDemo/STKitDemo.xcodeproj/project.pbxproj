@@ -197,6 +197,7 @@
 		77008F2F1BE1FA8100C2A3E7 /* STKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				771144611BF8920C00665541 /* Foundation */,
 				77A7422B1BF80FB70026FB9D /* STKit */,
 				77008F331BE1FA8100C2A3E7 /* AppDelegate.h */,
 				77008F341BE1FA8100C2A3E7 /* AppDelegate.m */,
@@ -234,6 +235,13 @@
 				77008F571BE1FA8200C2A3E7 /* Info.plist */,
 			);
 			path = STKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		771144611BF8920C00665541 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		77A7422B1BF80FB70026FB9D /* STKit */ = {
