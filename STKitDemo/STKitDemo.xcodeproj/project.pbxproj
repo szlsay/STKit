@@ -14,6 +14,8 @@
 		77008F4B1BE1FA8200C2A3E7 /* STKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77008F4A1BE1FA8200C2A3E7 /* STKitDemoTests.m */; };
 		77008F561BE1FA8200C2A3E7 /* STKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77008F551BE1FA8200C2A3E7 /* STKitDemoUITests.m */; };
 		77A7422E1BF80FEE0026FB9D /* STAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7422D1BF80FEE0026FB9D /* STAppController.m */; };
+		77A742311BF8750E0026FB9D /* STButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A742301BF8750E0026FB9D /* STButton.m */; };
+		77A742341BF8898D0026FB9D /* STButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A742331BF8898D0026FB9D /* STButtonController.m */; };
 		77E0708F1BF6DE12005BC40E /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0708E1BF6DE12005BC40E /* MainController.m */; };
 		77E0712D1BF6E0B2005BC40E /* NSArray+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E070F11BF6E0B2005BC40E /* NSArray+STKit.m */; };
 		77E0712E1BF6E0B2005BC40E /* NSDate+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E070F31BF6E0B2005BC40E /* NSDate+STKit.m */; };
@@ -79,6 +81,10 @@
 		77008F571BE1FA8200C2A3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A7422C1BF80FEE0026FB9D /* STAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAppController.h; sourceTree = "<group>"; };
 		77A7422D1BF80FEE0026FB9D /* STAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAppController.m; sourceTree = "<group>"; };
+		77A7422F1BF8750E0026FB9D /* STButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STButton.h; sourceTree = "<group>"; };
+		77A742301BF8750E0026FB9D /* STButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STButton.m; sourceTree = "<group>"; };
+		77A742321BF8898D0026FB9D /* STButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STButtonController.h; sourceTree = "<group>"; };
+		77A742331BF8898D0026FB9D /* STButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STButtonController.m; sourceTree = "<group>"; };
 		77E0708D1BF6DE12005BC40E /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		77E0708E1BF6DE12005BC40E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		77E070F01BF6E0B2005BC40E /* NSArray+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+STKit.h"; sourceTree = "<group>"; };
@@ -235,6 +241,8 @@
 			children = (
 				77A7422C1BF80FEE0026FB9D /* STAppController.h */,
 				77A7422D1BF80FEE0026FB9D /* STAppController.m */,
+				77A742321BF8898D0026FB9D /* STButtonController.h */,
+				77A742331BF8898D0026FB9D /* STButtonController.m */,
 			);
 			path = STKit;
 			sourceTree = "<group>";
@@ -325,6 +333,8 @@
 			children = (
 				77E071221BF6E0B2005BC40E /* STApp.h */,
 				77E071231BF6E0B2005BC40E /* STApp.m */,
+				77A7422F1BF8750E0026FB9D /* STButton.h */,
+				77A742301BF8750E0026FB9D /* STButton.m */,
 				77E071241BF6E0B2005BC40E /* STLog.h */,
 				77E071251BF6E0B2005BC40E /* STLog.m */,
 				77E071261BF6E0B2005BC40E /* STPassword.h */,
@@ -479,6 +489,7 @@
 				77E071341BF6E0B2005BC40E /* NSProcessInfo+STKit.m in Sources */,
 				77008F351BE1FA8100C2A3E7 /* AppDelegate.m in Sources */,
 				77008F321BE1FA8100C2A3E7 /* main.m in Sources */,
+				77A742341BF8898D0026FB9D /* STButtonController.m in Sources */,
 				77E071331BF6E0B2005BC40E /* NSNumber+STKit.m in Sources */,
 				77E071441BF6E0B2005BC40E /* UIWindow+STKit.m in Sources */,
 				77E071431BF6E0B2005BC40E /* UIWebView+STKit.m in Sources */,
@@ -500,6 +511,7 @@
 				77E071371BF6E0B2005BC40E /* UIButton+STKit.m in Sources */,
 				77E0712E1BF6E0B2005BC40E /* NSDate+STKit.m in Sources */,
 				77E071491BF6E0B2005BC40E /* STTouchID.m in Sources */,
+				77A742311BF8750E0026FB9D /* STButton.m in Sources */,
 				77E071321BF6E0B2005BC40E /* NSMutableDictionary+STKit.m in Sources */,
 				77A7422E1BF80FEE0026FB9D /* STAppController.m in Sources */,
 				77E071481BF6E0B2005BC40E /* STSystemSound.m in Sources */,

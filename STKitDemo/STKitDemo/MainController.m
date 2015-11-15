@@ -8,9 +8,11 @@
 
 #import "MainController.h"
 #import "STAppController.h"
+#import "STButtonController.h"
 @interface MainController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong, nonnull)UITableView *tableView; //
+@property (nonatomic, strong, nullable)NSArray *arrayName; //
 
 @end
 
@@ -35,7 +37,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return self.arrayName.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -45,7 +47,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
                                      reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"STApp";
+    cell.textLabel.text = self.arrayName[indexPath.row];
     return cell;
 }
 
@@ -53,6 +55,9 @@
 {
     if (indexPath.row == 0) {
         [self.navigationController pushViewController:[STAppController new]
+                                             animated:YES];
+    }else {
+        [self.navigationController pushViewController:[STButtonController new]
                                              animated:YES];
     }
 }
@@ -77,6 +82,10 @@
         _tableView.dataSource = self;
     }
     return _tableView;
+}
+- (NSArray *)arrayName
+{
+    return @[@"STApp", @"STButton"];
 }
 
 @end
