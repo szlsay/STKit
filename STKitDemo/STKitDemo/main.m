@@ -2,8 +2,8 @@
 //  main.m
 //  STKitDemo
 //
-//  Created by rkxt_ios on 15/10/29.
-//  Copyright © 2015年 shentian. All rights reserved.
+//  Created by ST on 17/3/1.
+//  Copyright © 2017年 ST. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
