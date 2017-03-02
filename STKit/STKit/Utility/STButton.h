@@ -6,9 +6,8 @@
 //  Copyright © 2015年 st. All rights reserved.
 //
 
-@import Foundation;
-
-@import UIKit;
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface STButton : UIButton
 
@@ -20,7 +19,7 @@
  *  @param highlightedImage Button's highlighted image
  *  @param fadeDuration     Fade duration
  *
- *  @return Returns the created BFButton, subclass of UIButton
+ *  @return Returns the created STButton, subclass of UIButton
  */
 
 - (instancetype _Nonnull)initWithFrame:(CGRect)frame

@@ -12,7 +12,7 @@
 		700276BC1E66A6D4001FA1BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276BB1E66A6D4001FA1BA /* ViewController.m */; };
 		700276C11E66A6D4001FA1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700276C01E66A6D4001FA1BA /* Assets.xcassets */; };
 		700276C41E66A6D4001FA1BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700276C21E66A6D4001FA1BA /* LaunchScreen.storyboard */; };
-		700276CE1E66A7C4001FA1BA /* libSTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 700276CD1E66A7C4001FA1BA /* libSTKit.a */; };
+		70F87B5A1E67CF96008465C1 /* libSTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F87B591E67CF96008465C1 /* libSTKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,38 @@
 		700276C01E66A6D4001FA1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		700276C31E66A6D4001FA1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		700276C51E66A6D4001FA1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		700276CD1E66A7C4001FA1BA /* libSTKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTKit.a; path = "../STKit/build/Debug-iphoneos/libSTKit.a"; sourceTree = "<group>"; };
+		7002774F1E66B563001FA1BA /* NSArray+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+STKit.h"; sourceTree = "<group>"; };
+		700277501E66B563001FA1BA /* NSDate+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+STKit.h"; sourceTree = "<group>"; };
+		700277511E66B563001FA1BA /* NSDictionary+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+STKit.h"; sourceTree = "<group>"; };
+		700277521E66B563001FA1BA /* NSFileManager+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+STKit.h"; sourceTree = "<group>"; };
+		700277531E66B563001FA1BA /* NSMutableArray+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+STKit.h"; sourceTree = "<group>"; };
+		700277541E66B563001FA1BA /* NSMutableDictionary+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+STKit.h"; sourceTree = "<group>"; };
+		700277551E66B563001FA1BA /* NSNumber+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+STKit.h"; sourceTree = "<group>"; };
+		700277561E66B563001FA1BA /* NSProcessInfo+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+STKit.h"; sourceTree = "<group>"; };
+		700277571E66B563001FA1BA /* NSString+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STKit.h"; sourceTree = "<group>"; };
+		700277581E66B563001FA1BA /* NSThread+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+STKit.h"; sourceTree = "<group>"; };
+		700277591E66B563001FA1BA /* STApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STApp.h; sourceTree = "<group>"; };
+		7002775A1E66B563001FA1BA /* STButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STButton.h; sourceTree = "<group>"; };
+		7002775B1E66B563001FA1BA /* STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKit.h; sourceTree = "<group>"; };
+		7002775C1E66B563001FA1BA /* STLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLog.h; sourceTree = "<group>"; };
+		7002775D1E66B563001FA1BA /* STPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPassword.h; sourceTree = "<group>"; };
+		7002775E1E66B563001FA1BA /* STSystemSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSystemSound.h; sourceTree = "<group>"; };
+		7002775F1E66B563001FA1BA /* STTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTouchID.h; sourceTree = "<group>"; };
+		700277601E66B563001FA1BA /* UIButton+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+STKit.h"; sourceTree = "<group>"; };
+		700277611E66B563001FA1BA /* UIColor+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+STKit.h"; sourceTree = "<group>"; };
+		700277621E66B563001FA1BA /* UIDevice+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+STKit.h"; sourceTree = "<group>"; };
+		700277631E66B563001FA1BA /* UIFont+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+STKit.h"; sourceTree = "<group>"; };
+		700277641E66B563001FA1BA /* UIImage+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+STKit.h"; sourceTree = "<group>"; };
+		700277651E66B563001FA1BA /* UIImageView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+STKit.h"; sourceTree = "<group>"; };
+		700277661E66B563001FA1BA /* UILabel+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+STKit.h"; sourceTree = "<group>"; };
+		700277671E66B563001FA1BA /* UIScrollView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+STKit.h"; sourceTree = "<group>"; };
+		700277681E66B563001FA1BA /* UITableView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+STKit.h"; sourceTree = "<group>"; };
+		700277691E66B563001FA1BA /* UITextField+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+STKit.h"; sourceTree = "<group>"; };
+		7002776A1E66B563001FA1BA /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		7002776B1E66B563001FA1BA /* UIView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STKit.h"; sourceTree = "<group>"; };
+		7002776C1E66B563001FA1BA /* UIWebView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+STKit.h"; sourceTree = "<group>"; };
+		7002776D1E66B563001FA1BA /* UIWindow+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+STKit.h"; sourceTree = "<group>"; };
+		70F87B591E67CF96008465C1 /* libSTKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTKit.a; path = "../../../../../../../Users/admin/Library/Developer/Xcode/DerivedData/STKit-cadumfjsqjqyqgfofzipnutboeha/Build/Products/Debug-iphonesimulator/libSTKit.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				700276CE1E66A7C4001FA1BA /* libSTKit.a in Frameworks */,
+				70F87B5A1E67CF96008465C1 /* libSTKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +114,57 @@
 		700276CC1E66A7C4001FA1BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				700276CD1E66A7C4001FA1BA /* libSTKit.a */,
+				70F87B591E67CF96008465C1 /* libSTKit.a */,
+				7002774D1E66B563001FA1BA /* include */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7002774D1E66B563001FA1BA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7002774E1E66B563001FA1BA /* STKit */,
+			);
+			name = include;
+			path = "../../../../../../../Users/admin/Library/Developer/Xcode/DerivedData/STKit-cadumfjsqjqyqgfofzipnutboeha/Build/Products/Debug-iphonesimulator/include";
+			sourceTree = "<group>";
+		};
+		7002774E1E66B563001FA1BA /* STKit */ = {
+			isa = PBXGroup;
+			children = (
+				7002774F1E66B563001FA1BA /* NSArray+STKit.h */,
+				700277501E66B563001FA1BA /* NSDate+STKit.h */,
+				700277511E66B563001FA1BA /* NSDictionary+STKit.h */,
+				700277521E66B563001FA1BA /* NSFileManager+STKit.h */,
+				700277531E66B563001FA1BA /* NSMutableArray+STKit.h */,
+				700277541E66B563001FA1BA /* NSMutableDictionary+STKit.h */,
+				700277551E66B563001FA1BA /* NSNumber+STKit.h */,
+				700277561E66B563001FA1BA /* NSProcessInfo+STKit.h */,
+				700277571E66B563001FA1BA /* NSString+STKit.h */,
+				700277581E66B563001FA1BA /* NSThread+STKit.h */,
+				700277591E66B563001FA1BA /* STApp.h */,
+				7002775A1E66B563001FA1BA /* STButton.h */,
+				7002775B1E66B563001FA1BA /* STKit.h */,
+				7002775C1E66B563001FA1BA /* STLog.h */,
+				7002775D1E66B563001FA1BA /* STPassword.h */,
+				7002775E1E66B563001FA1BA /* STSystemSound.h */,
+				7002775F1E66B563001FA1BA /* STTouchID.h */,
+				700277601E66B563001FA1BA /* UIButton+STKit.h */,
+				700277611E66B563001FA1BA /* UIColor+STKit.h */,
+				700277621E66B563001FA1BA /* UIDevice+STKit.h */,
+				700277631E66B563001FA1BA /* UIFont+STKit.h */,
+				700277641E66B563001FA1BA /* UIImage+STKit.h */,
+				700277651E66B563001FA1BA /* UIImageView+STKit.h */,
+				700277661E66B563001FA1BA /* UILabel+STKit.h */,
+				700277671E66B563001FA1BA /* UIScrollView+STKit.h */,
+				700277681E66B563001FA1BA /* UITableView+STKit.h */,
+				700277691E66B563001FA1BA /* UITextField+STKit.h */,
+				7002776A1E66B563001FA1BA /* UIView+ST.h */,
+				7002776B1E66B563001FA1BA /* UIView+STKit.h */,
+				7002776C1E66B563001FA1BA /* UIWebView+STKit.h */,
+				7002776D1E66B563001FA1BA /* UIWindow+STKit.h */,
+			);
+			path = STKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +391,7 @@
 				700276CA1E66A6D4001FA1BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

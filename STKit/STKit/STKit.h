@@ -6,6 +6,15 @@
 //  Copyright © 2017年 ST. All rights reserved.
 //
 
+/**
+ *  STKit version string
+ */
+#define STKIT_VERSION @"1.0"
+/**
+ *  STKit author string
+ */
+#define STKIT_AUTHOR @"Shen Zhaoliang"
+
 #import <Foundation/Foundation.h>
 
 #pragma mark -- 1.Utility  --

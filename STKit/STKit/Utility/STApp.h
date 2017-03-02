@@ -6,7 +6,9 @@
 //  Copyright (c) 2015年 ST. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  *  1.获取App名字
@@ -40,55 +42,37 @@ FOUNDATION_EXPORT NSString * _Nonnull const STBundleShortVersionString;
 
 @interface STApp : NSObject
 
-//TODO:下面的方法还没有验证
-
 /**
- *  Executes a block on first start of the App for current version.
- *  Remember to execute UI instuctions on main thread
- *
- *  @param block The block to execute, returns isFirstStartForCurrentVersion
+ *  第一次启动应用程序的Block
  */
 + (void)onFirstStart:(void (^ _Nullable)(BOOL isFirstStart))block;
 
 /**
- *  Executes a block on first start of the App.
- *  Remember to execute UI instuctions on main thread
- *
- *  @param block The block to execute, returns isFirstStart
+ *  第一次启动当前的应用程序的Block
  */
 + (void)onFirstStartForCurrentVersion:(void (^ _Nullable)(BOOL isFirstStartForCurrentVersion))block;
 
 /**
- *  Executes a block on first start of the App for current given version.
- *  Remember to execute UI instuctions on main thread
- *
- *  @param version Version to be checked
- *  @param block   The block to execute, returns isFirstStartForVersion
+ *  第一次启动指定的应用程序的Block
  */
 + (void)onFirstStartForVersion:(NSString * _Nonnull)version
                          block:(void (^ _Nullable)(BOOL isFirstStartForCurrentVersion))block;
 
 /**
- *  Returns if is the first start of the App
- *
- *  @return Returns if is the first start of the App
+ *  是否第一次执行APP
  */
 + (BOOL)isFirstStart;
 
 /**
- *  Returns if is the first start of the App for current version
- *
- *  @return Returns if is the first start of the App for current version
+ *  是否第一次执行当前版本的APP
  */
 + (BOOL)isFirstStartForCurrentVersion;
 
 /**
- *  Returns if is the first start of the App for the given version
- *
- *  @param version Version to be checked
- *
- *  @return Returns if is the first start of the App for the given version
+ *  是否第一次执行指定版本的APP
  */
 + (BOOL)isFirstStartForVersion:(NSString * _Nonnull)version;
 
 @end
+
+NS_ASSUME_NONNULL_END

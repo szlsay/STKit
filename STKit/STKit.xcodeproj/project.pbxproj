@@ -69,6 +69,8 @@
 		700277481E66B259001FA1BA /* UIView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FC1E66AB24001FA1BA /* UIView+STKit.h */; };
 		700277491E66B259001FA1BA /* UIWebView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FE1E66AB24001FA1BA /* UIWebView+STKit.h */; };
 		7002774A1E66B259001FA1BA /* UIWindow+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700277001E66AB24001FA1BA /* UIWindow+STKit.h */; };
+		700277701E66C115001FA1BA /* STCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7002776F1E66C115001FA1BA /* STCryptor.m */; };
+		70F87B581E67C8B7008465C1 /* STCryptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7002776E1E66C115001FA1BA /* STCryptor.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +80,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				70F87B581E67C8B7008465C1 /* STCryptor.h in CopyFiles */,
 				7002772D1E66B259001FA1BA /* STApp.h in CopyFiles */,
 				7002772E1E66B259001FA1BA /* STButton.h in CopyFiles */,
 				7002772F1E66B259001FA1BA /* STLog.h in CopyFiles */,
@@ -178,6 +181,8 @@
 		700277241E66AF38001FA1BA /* STSystemSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSystemSound.m; sourceTree = "<group>"; };
 		700277251E66AF38001FA1BA /* STTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTouchID.h; sourceTree = "<group>"; };
 		700277261E66AF38001FA1BA /* STTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTouchID.m; sourceTree = "<group>"; };
+		7002776E1E66C115001FA1BA /* STCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCryptor.h; sourceTree = "<group>"; };
+		7002776F1E66C115001FA1BA /* STCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCryptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +303,8 @@
 				7002771E1E66AF38001FA1BA /* STButton.m */,
 				7002771F1E66AF38001FA1BA /* STLog.h */,
 				700277201E66AF38001FA1BA /* STLog.m */,
+				7002776E1E66C115001FA1BA /* STCryptor.h */,
+				7002776F1E66C115001FA1BA /* STCryptor.m */,
 				700277211E66AF38001FA1BA /* STPassword.h */,
 				700277221E66AF38001FA1BA /* STPassword.m */,
 				700277231E66AF38001FA1BA /* STSystemSound.h */,
@@ -366,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700277701E66C115001FA1BA /* STCryptor.m in Sources */,
 				700277041E66AB24001FA1BA /* NSDictionary+STKit.m in Sources */,
 				700277061E66AB24001FA1BA /* NSMutableArray+STKit.m in Sources */,
 				700277021E66AB24001FA1BA /* NSArray+STKit.m in Sources */,
@@ -532,6 +540,7 @@
 				700276A71E66A6B2001FA1BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

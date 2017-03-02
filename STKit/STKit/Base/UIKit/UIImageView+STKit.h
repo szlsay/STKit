@@ -10,7 +10,7 @@
 /**
  *  给UIImageView类添加许多有用的方法
  */
-@interface UIImageView (BFKit)
+@interface UIImageView (STKit)
 
 /**
  *  给定图片、框架初始化UIImageView

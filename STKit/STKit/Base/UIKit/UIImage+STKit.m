@@ -387,6 +387,7 @@ UIColor *colorForColorString(NSString *colorString)
 }
 
 
+
 - (UIImage *)imageByScalingToSize:(CGSize)targetSize
 {
     UIImage *sourceImage = self;

@@ -49,7 +49,6 @@
             break;
     }
     
-    //BFLog(@"savedArrayToFile : %@",path);
     return [NSKeyedArchiver archiveRootObject:array toFile:_path];
 }
 
@@ -76,7 +75,6 @@
             break;
     }
     
-    //BFLog(@"loadedArrayFromFile : %@",_path);
     return [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
 }
 
