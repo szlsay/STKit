@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		700276A11E66A6B2001FA1BA /* STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276A01E66A6B2001FA1BA /* STKit.m */; };
 		700276A21E66A6B2001FA1BA /* STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7002769F1E66A6B2001FA1BA /* STKit.h */; };
 		700277021E66AB24001FA1BA /* NSArray+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276D21E66AB24001FA1BA /* NSArray+STKit.m */; };
 		700277031E66AB24001FA1BA /* NSDate+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276D41E66AB24001FA1BA /* NSDate+STKit.m */; };
@@ -120,7 +119,6 @@
 /* Begin PBXFileReference section */
 		7002769C1E66A6B2001FA1BA /* libSTKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7002769F1E66A6B2001FA1BA /* STKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKit.h; sourceTree = "<group>"; };
-		700276A01E66A6B2001FA1BA /* STKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKit.m; sourceTree = "<group>"; };
 		700276D11E66AB24001FA1BA /* NSArray+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+STKit.h"; sourceTree = "<group>"; };
 		700276D21E66AB24001FA1BA /* NSArray+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+STKit.m"; sourceTree = "<group>"; };
 		700276D31E66AB24001FA1BA /* NSDate+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+STKit.h"; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				7002769F1E66A6B2001FA1BA /* STKit.h */,
-				700276A01E66A6B2001FA1BA /* STKit.m */,
 				7002771A1E66AEA5001FA1BA /* Utility */,
 				700276CF1E66AA92001FA1BA /* Base */,
 			);
@@ -390,7 +387,6 @@
 				700277191E66AB24001FA1BA /* UIWindow+STKit.m in Sources */,
 				700277141E66AB24001FA1BA /* UITableView+STKit.m in Sources */,
 				7002772A1E66AF38001FA1BA /* STPassword.m in Sources */,
-				700276A11E66A6B2001FA1BA /* STKit.m in Sources */,
 				700277151E66AB24001FA1BA /* UITextField+STKit.m in Sources */,
 				700277171E66AB24001FA1BA /* UIView+STKit.m in Sources */,
 				700277051E66AB24001FA1BA /* NSFileManager+STKit.m in Sources */,

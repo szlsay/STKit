@@ -54,7 +54,3 @@
 #import "UIWebView+STKit.h"
 #import "UIWindow+STKit.h"
 
-
-@interface STKit : NSObject
-
-@end

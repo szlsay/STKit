@@ -9,6 +9,7 @@
 #import "UIWindow+STKit.h"
 #import "UIDevice+STKit.h"
 #import <objc/runtime.h>
+#import "UIImage+STKit.h"
 
 @implementation UIWindow (STKit)
 BOOL sendEventExchanged = NO;

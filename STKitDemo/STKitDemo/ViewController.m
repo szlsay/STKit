@@ -27,11 +27,13 @@
     
     STButton *button = [[STButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100) image:[UIImage imageNamed:@"filter_scenery_180"] highlightedImage:[UIImage imageNamed:@"filter_general_557"] fadeDuration:2.0];
     
+    
+    
+    self.imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.imageView.image = [UIImage imageNamed:@"filter_meirong_baixi"];
+    [self.view addSubview:self.imageView];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(takeScreenshot) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
-    [self.view addSubview:self.imageView];
 }
 
 #pragma mark - --- 2.delegate 视图委托 ---
@@ -47,6 +49,13 @@
     UIWindow *window = [[UIWindow alloc]init];
     window.frame = self.view.frame;
     window.backgroundColor = self.view.backgroundColor;
+    
+    UIBlurEffect *beffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    
+    UIVisualEffectView *view = [[UIVisualEffectView alloc]initWithEffect:beffect];
+    view.frame = self.view.bounds;
+    
+    [self.view addSubview:view];
     
         
 }
