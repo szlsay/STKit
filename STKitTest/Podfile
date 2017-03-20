@@ -1,0 +1,19 @@
+project 'STKitTest.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'STKitTest' do
+pod 'STKit', '~> 1.0'
+
+  target 'STKitTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'STKitTestUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -28,7 +28,7 @@
 		700277131E66AB24001FA1BA /* UIScrollView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276F51E66AB24001FA1BA /* UIScrollView+STKit.m */; };
 		700277141E66AB24001FA1BA /* UITableView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276F71E66AB24001FA1BA /* UITableView+STKit.m */; };
 		700277151E66AB24001FA1BA /* UITextField+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276F91E66AB24001FA1BA /* UITextField+STKit.m */; };
-		700277161E66AB24001FA1BA /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276FB1E66AB24001FA1BA /* UIView+ST.m */; };
+		700277161E66AB24001FA1BA /* UIView+STChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276FB1E66AB24001FA1BA /* UIView+STChain.m */; };
 		700277171E66AB24001FA1BA /* UIView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276FD1E66AB24001FA1BA /* UIView+STKit.m */; };
 		700277181E66AB24001FA1BA /* UIWebView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700276FF1E66AB24001FA1BA /* UIWebView+STKit.m */; };
 		700277191E66AB24001FA1BA /* UIWindow+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 700277011E66AB24001FA1BA /* UIWindow+STKit.m */; };
@@ -64,11 +64,17 @@
 		700277441E66B259001FA1BA /* UIScrollView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276F41E66AB24001FA1BA /* UIScrollView+STKit.h */; };
 		700277451E66B259001FA1BA /* UITableView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276F61E66AB24001FA1BA /* UITableView+STKit.h */; };
 		700277461E66B259001FA1BA /* UITextField+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276F81E66AB24001FA1BA /* UITextField+STKit.h */; };
-		700277471E66B259001FA1BA /* UIView+ST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FA1E66AB24001FA1BA /* UIView+ST.h */; };
+		700277471E66B259001FA1BA /* UIView+STChain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FA1E66AB24001FA1BA /* UIView+STChain.h */; };
 		700277481E66B259001FA1BA /* UIView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FC1E66AB24001FA1BA /* UIView+STKit.h */; };
 		700277491E66B259001FA1BA /* UIWebView+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700276FE1E66AB24001FA1BA /* UIWebView+STKit.h */; };
 		7002774A1E66B259001FA1BA /* UIWindow+STKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700277001E66AB24001FA1BA /* UIWindow+STKit.h */; };
 		700277701E66C115001FA1BA /* STCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7002776F1E66C115001FA1BA /* STCryptor.m */; };
+		70F703BE1E7BC79600623D1E /* UIView+STAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F703BB1E7BC79600623D1E /* UIView+STAutoLayout.m */; };
+		70F703BF1E7BC79600623D1E /* UIView+STFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F703BD1E7BC79600623D1E /* UIView+STFrame.m */; };
+		70F703C41E7BCD4A00623D1E /* STAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F703C31E7BCD4A00623D1E /* STAlertView.m */; };
+		70F703C61E7BCDC400623D1E /* STAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 70F703C21E7BCD4A00623D1E /* STAlertView.h */; };
+		70F703C71E7BCDC400623D1E /* UIView+STAutoLayout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 70F703BA1E7BC79600623D1E /* UIView+STAutoLayout.h */; };
+		70F703C81E7BCDC400623D1E /* UIView+STFrame.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 70F703BC1E7BC79600623D1E /* UIView+STFrame.h */; };
 		70F87B581E67C8B7008465C1 /* STCryptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7002776E1E66C115001FA1BA /* STCryptor.h */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +85,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				70F703C61E7BCDC400623D1E /* STAlertView.h in CopyFiles */,
+				70F703C71E7BCDC400623D1E /* UIView+STAutoLayout.h in CopyFiles */,
+				70F703C81E7BCDC400623D1E /* UIView+STFrame.h in CopyFiles */,
 				70F87B581E67C8B7008465C1 /* STCryptor.h in CopyFiles */,
 				7002772D1E66B259001FA1BA /* STApp.h in CopyFiles */,
 				7002772E1E66B259001FA1BA /* STButton.h in CopyFiles */,
@@ -106,7 +115,7 @@
 				700277441E66B259001FA1BA /* UIScrollView+STKit.h in CopyFiles */,
 				700277451E66B259001FA1BA /* UITableView+STKit.h in CopyFiles */,
 				700277461E66B259001FA1BA /* UITextField+STKit.h in CopyFiles */,
-				700277471E66B259001FA1BA /* UIView+ST.h in CopyFiles */,
+				700277471E66B259001FA1BA /* UIView+STChain.h in CopyFiles */,
 				700277481E66B259001FA1BA /* UIView+STKit.h in CopyFiles */,
 				700277491E66B259001FA1BA /* UIWebView+STKit.h in CopyFiles */,
 				7002774A1E66B259001FA1BA /* UIWindow+STKit.h in CopyFiles */,
@@ -159,8 +168,8 @@
 		700276F71E66AB24001FA1BA /* UITableView+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+STKit.m"; sourceTree = "<group>"; };
 		700276F81E66AB24001FA1BA /* UITextField+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+STKit.h"; sourceTree = "<group>"; };
 		700276F91E66AB24001FA1BA /* UITextField+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+STKit.m"; sourceTree = "<group>"; };
-		700276FA1E66AB24001FA1BA /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
-		700276FB1E66AB24001FA1BA /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		700276FA1E66AB24001FA1BA /* UIView+STChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STChain.h"; sourceTree = "<group>"; };
+		700276FB1E66AB24001FA1BA /* UIView+STChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STChain.m"; sourceTree = "<group>"; };
 		700276FC1E66AB24001FA1BA /* UIView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STKit.h"; sourceTree = "<group>"; };
 		700276FD1E66AB24001FA1BA /* UIView+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STKit.m"; sourceTree = "<group>"; };
 		700276FE1E66AB24001FA1BA /* UIWebView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+STKit.h"; sourceTree = "<group>"; };
@@ -181,6 +190,12 @@
 		700277261E66AF38001FA1BA /* STTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTouchID.m; sourceTree = "<group>"; };
 		7002776E1E66C115001FA1BA /* STCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCryptor.h; sourceTree = "<group>"; };
 		7002776F1E66C115001FA1BA /* STCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCryptor.m; sourceTree = "<group>"; };
+		70F703BA1E7BC79600623D1E /* UIView+STAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STAutoLayout.h"; sourceTree = "<group>"; };
+		70F703BB1E7BC79600623D1E /* UIView+STAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STAutoLayout.m"; sourceTree = "<group>"; };
+		70F703BC1E7BC79600623D1E /* UIView+STFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STFrame.h"; sourceTree = "<group>"; };
+		70F703BD1E7BC79600623D1E /* UIView+STFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STFrame.m"; sourceTree = "<group>"; };
+		70F703C21E7BCD4A00623D1E /* STAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertView.h; sourceTree = "<group>"; };
+		70F703C31E7BCD4A00623D1E /* STAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +274,7 @@
 		700276E51E66AB24001FA1BA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				70F703C01E7BC89700623D1E /* UIView */,
 				700276E61E66AB24001FA1BA /* UIButton+STKit.h */,
 				700276E71E66AB24001FA1BA /* UIButton+STKit.m */,
 				700276E81E66AB24001FA1BA /* UIColor+STKit.h */,
@@ -279,10 +295,6 @@
 				700276F71E66AB24001FA1BA /* UITableView+STKit.m */,
 				700276F81E66AB24001FA1BA /* UITextField+STKit.h */,
 				700276F91E66AB24001FA1BA /* UITextField+STKit.m */,
-				700276FA1E66AB24001FA1BA /* UIView+ST.h */,
-				700276FB1E66AB24001FA1BA /* UIView+ST.m */,
-				700276FC1E66AB24001FA1BA /* UIView+STKit.h */,
-				700276FD1E66AB24001FA1BA /* UIView+STKit.m */,
 				700276FE1E66AB24001FA1BA /* UIWebView+STKit.h */,
 				700276FF1E66AB24001FA1BA /* UIWebView+STKit.m */,
 				700277001E66AB24001FA1BA /* UIWindow+STKit.h */,
@@ -294,8 +306,8 @@
 		7002771A1E66AEA5001FA1BA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				7002771B1E66AF38001FA1BA /* STApp.h */,
-				7002771C1E66AF38001FA1BA /* STApp.m */,
+				70F703C51E7BCD5500623D1E /* STAlertView */,
+				70F703C11E7BCCC800623D1E /* STAPP */,
 				7002771D1E66AF38001FA1BA /* STButton.h */,
 				7002771E1E66AF38001FA1BA /* STButton.m */,
 				7002771F1E66AF38001FA1BA /* STLog.h */,
@@ -310,6 +322,39 @@
 				700277261E66AF38001FA1BA /* STTouchID.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		70F703C01E7BC89700623D1E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				70F703BA1E7BC79600623D1E /* UIView+STAutoLayout.h */,
+				70F703BB1E7BC79600623D1E /* UIView+STAutoLayout.m */,
+				70F703BC1E7BC79600623D1E /* UIView+STFrame.h */,
+				70F703BD1E7BC79600623D1E /* UIView+STFrame.m */,
+				700276FA1E66AB24001FA1BA /* UIView+STChain.h */,
+				700276FB1E66AB24001FA1BA /* UIView+STChain.m */,
+				700276FC1E66AB24001FA1BA /* UIView+STKit.h */,
+				700276FD1E66AB24001FA1BA /* UIView+STKit.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		70F703C11E7BCCC800623D1E /* STAPP */ = {
+			isa = PBXGroup;
+			children = (
+				7002771B1E66AF38001FA1BA /* STApp.h */,
+				7002771C1E66AF38001FA1BA /* STApp.m */,
+			);
+			name = STAPP;
+			sourceTree = "<group>";
+		};
+		70F703C51E7BCD5500623D1E /* STAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				70F703C21E7BCD4A00623D1E /* STAlertView.h */,
+				70F703C31E7BCD4A00623D1E /* STAlertView.m */,
+			);
+			name = STAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +422,7 @@
 				700277031E66AB24001FA1BA /* NSDate+STKit.m in Sources */,
 				700277281E66AF38001FA1BA /* STButton.m in Sources */,
 				700277131E66AB24001FA1BA /* UIScrollView+STKit.m in Sources */,
-				700277161E66AB24001FA1BA /* UIView+ST.m in Sources */,
+				700277161E66AB24001FA1BA /* UIView+STChain.m in Sources */,
 				7002772B1E66AF38001FA1BA /* STSystemSound.m in Sources */,
 				700277291E66AF38001FA1BA /* STLog.m in Sources */,
 				700277091E66AB24001FA1BA /* NSProcessInfo+STKit.m in Sources */,
@@ -386,8 +431,11 @@
 				7002770B1E66AB24001FA1BA /* NSThread+STKit.m in Sources */,
 				700277191E66AB24001FA1BA /* UIWindow+STKit.m in Sources */,
 				700277141E66AB24001FA1BA /* UITableView+STKit.m in Sources */,
+				70F703C41E7BCD4A00623D1E /* STAlertView.m in Sources */,
 				7002772A1E66AF38001FA1BA /* STPassword.m in Sources */,
 				700277151E66AB24001FA1BA /* UITextField+STKit.m in Sources */,
+				70F703BF1E7BC79600623D1E /* UIView+STFrame.m in Sources */,
+				70F703BE1E7BC79600623D1E /* UIView+STAutoLayout.m in Sources */,
 				700277171E66AB24001FA1BA /* UIView+STKit.m in Sources */,
 				700277051E66AB24001FA1BA /* NSFileManager+STKit.m in Sources */,
 				7002770E1E66AB24001FA1BA /* UIDevice+STKit.m in Sources */,

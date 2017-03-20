@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "STApp.h"
+#import "UtilityController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,14 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [ViewController new];
+    
+    UITabBarController *tabBarVC = [[UITabBarController alloc]init];
+    [tabBarVC addChildViewController:[[UINavigationController alloc] initWithRootViewController:[UtilityController new]]];
+    self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     
-    NSLog(@"%s %@", __FUNCTION__, APP_Version);
-    [STApp onFirstStart:^(BOOL isFirstStart) {
-        
-         NSLog(@"%s %@  %zd", __FUNCTION__, self , isFirstStart);
-    }];
     return YES;
 }
 
